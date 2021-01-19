@@ -1,12 +1,12 @@
-from keras.callbacks import ModelCheckpoint
+import tensorflow.keras as keras
+from tensorflow.keras.callbacks import ModelCheckpoint
 from keras_preprocessing.image import ImageDataGenerator
 import numpy as np
 import matplotlib.pyplot as plt
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import os
-from keras.optimizers import Adam
-import keras
-from deep_seg.unet_pipeline.unet import CorneaNet
+from tensorflow.keras.optimizers import Adam
+from unet_pipeline.unet import CorneaNet
 
 train_path = "/content/drive/MyDrive/Colab Notebooks/cells/train"
 validation_path = "/content/drive/MyDrive/Colab Notebooks/cells/validation"

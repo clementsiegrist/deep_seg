@@ -1,17 +1,10 @@
-from keras.callbacks import ModelCheckpoint
-from keras_preprocessing.image import ImageDataGenerator
-from keras.optimizers import Adam
-import os
-import keras
+import tensorflow.keras as keras
 from keras.layers import BatchNormalization, MaxPooling2D, UpSampling2D, Dropout, Conv2D, Dense, Input, Activation, concatenate
-#from Models.losses import weighted_bce_dice_loss, weighted_dice_loss
 import tensorflow as tf
-import matplotlib.pyplot as plt
-from keras.models import load_model
-from sklearn.utils import class_weight
-from keras import layers as L
-from keras import backend as K
-from keras.models import Model
+from tensorflow.keras.models import load_model
+from tensorflow.keras import layers as L
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
 import numpy as np
 import random
 seed = 42
